@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto','sans-serif';
+    background-color: #dddbdb;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(5, 5, 51);
+    color: white;
+    height: 100px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 24px;
+}
+
+.searchBar{
+    display: flex;
+
+}
+
+.searchBar input{
+    width: 260px;
+    padding: 7px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+}
+
+.searchBar button{
+    width: 80px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-inline: 8px;
+
+}
+.card{
+    margin-top: 45px;
+    
+
+}
+
+.page {
+    width: 330px; 
+    height: 330px; 
+    object-fit: cover;  
+    gap: 10px;
+    margin:0;
+    padding: 0;
+    /* flex-wrap: wrap; */
+}
+.page1{
+    width: 330px; 
+    height: 330px; 
+    object-fit: cover;  
+     margin-left: 15px;
+}
+
+.HH{
+    margin-left:20px;
+}
+
+.movieCard{
+    display: flex;
+    background-color: white;
+    padding: 22px;
+    width: 1000px;
+    margin: auto;
+    gap:22px ;
+    border-radius: 5px;
+
+}
+
+.movieCard h1{
+    text-align: center;
+}
+.movieCard.rating{
+    text-align: center;
+}
+
+.movieCard p{
+    margin-top: 22px;
+     
+  }
+
+  .movieCard a{
+    background-color:orangered ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding:7px;
+    margin: auto;
+    position: relative;
+    margin-top:20px ;
+
+  }
+  .movieCard span{
+    color: rgb(68, 68, 68);
+    
+  }
+
+.cardText{
+    margin-top:  23px;
+
+}
+
+.card h1{
+  text-align: center;
+
+}
+h1{
+    margin-left: 120px;
+}
+.movie-container{
+    margin-left: 300px;
+    background-attachment: fixed;
+    width: 430px;
+    height: 430px;
+    display: inline;
+    background-position: center;
+}
+
+
+/* new part */
+/* Smooth scroll to sections */
+
+  .wishlist-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto; /* Auto margins for horizontal centering */
+    border-radius: 5px;
+    width: 50%; /* Adjust the width as per your requirement */
+    text-align: center; /* Center-align the text */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+}
+
+.wishlist-container ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+}
+
+.wishlist-container li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.wishlist-container button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+
+@media screen  and(max-width:1100px){
+    .movieCard{
+        width: 90%;
+
+    }
+}
+
+@media screen  and(max-width:700px){
+    nav{
+        display: block;
+        height: 120px;
+    }
+    .searchBar{
+        display: flex;
+        justify-content: center;
+        margin-top:11px ;
+
+
+    }
+    .logo{
+        text-align: center;
+
+    }
+    .movieCard{
+        display: block;
+        text-align: center;
+        width: 80%;
+
+    }
+}
+
+@media screen  and(max-width:450px){
+    .searchBar input{
+        width: 50%;
+        
+    }
+    .searchBar button{
+        margin-inline: 3px;
+        font-size: 15px;
+
+    }
+    .movieCard img{
+          width: 90%;
+    }
+}
+
